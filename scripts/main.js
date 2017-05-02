@@ -26,9 +26,7 @@
 'use strict';
 
 $(function () {
-	$('.parallax-window').parallax({
-		imageSrc: '../images/main.jpg'
-	});
+	$('.parallax-window').parallax();
 });
 
 
@@ -41,7 +39,7 @@ $(function () {
 $(document).ready(function() {
     $('.features').click(function(){
         $(this).addClass('active');
-       $('html, body').animate({scrollTop:$('#features').position().top - 60}, 2000);
+       $('html, body').animate({scrollTop:$('#features').position().top - 0}, 1200);
     });
 });
 
